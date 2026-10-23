@@ -1,0 +1,15 @@
+[package]
+name = "zukai-model"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "zukai — typed diagram domain (pure primitives)."
+
+[dependencies]
+# Six-line contract: `#[derive(TataraDomain)]` makes a struct authorable as a
+# Lisp `(<keyword> :k v …)` form. v0 wiring covers the primitive-only Canvas
+# (u32 fields); nesting Diagram/Region/Node/Edge/etc. requires extending the
+# tatara derive to support custom nested struct types (a tatara-upstream
+# compound).
+tatara-lisp = "0.3.61"

@@ -1,0 +1,78 @@
+;; example_2region.tlisp — the Phase A acceptance corpus for the
+;; tatara-lisp bridge. Hand-authored .tlisp source compiles via
+;; `Diagram::compile_from_sexp` into a fully typed `Diagram`, then renders
+;; through the same `Renderer` seam every kata-authored diagram uses.
+;;
+;; To render: `cargo run --example tlisp_render -p zukai-kata`
+
+(defdiagram
+  :canvas  (defcanvas :width 960 :height 560)
+
+  :hero    (defhero :title    "Multi-Region — example (authored in tatara-lisp)"
+                    :subtitle "Phase A bridge — .tlisp → typed Diagram → render")
+
+  :regions ((defregion :id    "primary"
+                       :label "Primary region"
+                       :sublabel "read + write"
+                       :role  :master
+                       :badge (defbadge :text "MASTER · R/W" :role :master)
+                       :at    (defrect :x 40 :y 200 :w 420 :h 250))
+            (defregion :id    "replica"
+                       :label "Replica region"
+                       :sublabel "read-only"
+                       :role  :read
+                       :badge (defbadge :text "READ" :role :read)
+                       :at    (defrect :x 500 :y 200 :w 420 :h 250)))
+
+  :nodes   ((defnode :id "svc-a"
+                     :label "Service A"
+                     :role :master
+                     :region "primary"
+                     :at (defrect :x 60 :y 270 :w 120 :h 34))
+            (defnode :id "svc-b"
+                     :label "Service B"
+                     :role :master
+                     :region "primary"
+                     :at (defrect :x 190 :y 270 :w 120 :h 34))
+            (defnode :id "svc-c"
+                     :label "Service C"
+                     :role :master
+                     :region "primary"
+                     :at (defrect :x 320 :y 270 :w 120 :h 34))
+            (defnode :id "svc-a-r"
+                     :label "Service A (ro)"
+                     :role :read
+                     :region "replica"
+                     :at (defrect :x 520 :y 270 :w 120 :h 34))
+            (defnode :id "svc-b-r"
+                     :label "Service B (ro)"
+                     :role :read
+                     :region "replica"
+                     :at (defrect :x 650 :y 270 :w 120 :h 34))
+            (defnode :id "cache-r"
+                     :label "Cache"
+                     :role :neutral
+                     :region "replica"
+                     :at (defrect :x 780 :y 270 :w 120 :h 34)))
+
+  :edges   ((defedge :from   (defpoint :x 460 :y 325)
+                     :to     (defpoint :x 500 :y 325)
+                     :stroke :dashed
+                     :marker :arrow
+                     :role   :accent
+                     :label  "replicate")
+            (defedge :from   (defpoint :x 360 :y 142)
+                     :to     (defpoint :x 250 :y 196)
+                     :stroke :solid
+                     :marker :arrow
+                     :role   :neutral)
+            (defedge :from   (defpoint :x 460 :y 142)
+                     :to     (defpoint :x 710 :y 196)
+                     :stroke :solid
+                     :marker :arrow
+                     :role   :neutral))
+
+  :bands   ((defband :label    "Global DNS — nearest healthy region"
+                     :sublabel "latency + health-routed across regions"
+                     :role     :master
+                     :at       (defrect :x 300 :y 96 :w 360 :h 46))))

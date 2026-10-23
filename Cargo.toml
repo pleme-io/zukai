@@ -1,0 +1,10 @@
+# zukai — typed diagram domain. See docs/DESIGN.md.
+[workspace]
+resolver = "2"
+members = ["crates/zukai-model", "crates/zukai-render", "crates/zukai-cli", "crates/zukai-lower", "crates/zukai-kata", "crates/zukai-confluence"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/pleme-io/zukai"

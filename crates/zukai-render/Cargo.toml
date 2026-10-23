@@ -1,0 +1,21 @@
+[package]
+name = "zukai-render"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "zukai — render morphisms (diagram → leaf artifact)."
+
+[dependencies]
+zukai-model = { path = "../zukai-model", version = "0.0.1" }
+# resvg is the leaf-output rasterizer (SVG bytes → PNG bytes). It re-exports
+# `usvg` (parse/tree) and `tiny_skia` (pixmap). One dep, three roles.
+resvg = "0.45"
+# ishou-tokens provides the public generic design system. `IshouTheme` adapts
+# its TokenSet to zukai's `Theme` trait. Path-dep into the sibling pleme-io
+# repo; cargo resolves its workspace.deps (irodori from crates.io) cleanly.
+ishou-tokens = "0.1.18"
+# Three-pillar attestation primitive (theory/THEORY.md §V.3) — this is the
+# same `blake3` crate `tameshi` uses internally; tameshi adds the Ed25519
+# signing + persistent HeartbeatChain on top (wired at workspace absorption).
+blake3 = "1.8"

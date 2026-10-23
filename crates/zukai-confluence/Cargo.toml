@@ -1,0 +1,11 @@
+[package]
+name = "zukai-confluence"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tatara-lisp = "0.3.61"
+blue-lang-host = "0.0.84"
+
+[dev-dependencies]
