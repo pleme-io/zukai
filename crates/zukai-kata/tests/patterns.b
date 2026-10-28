@@ -259,7 +259,7 @@ def request_response()
 end
 
 def ids_of(forms)
-  map((f) -> get(f, :id), forms)
+  map((f) -> f[:id], forms)
 end
 
 def misspelled_hero()
