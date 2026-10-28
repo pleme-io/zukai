@@ -195,7 +195,7 @@ def body()
 end
 
 def page(title, body)
-  {kind: :defpage, title: title, body: body}
+  {kind: :defpage, title:, body:}
 end
 ";
 
