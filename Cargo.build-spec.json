@@ -719,15 +719,15 @@
         "preBuild": "export CARGO_CRATE_NAME=block_buffer;"
       }
     },
-    "blue-lang-bidama-0.0.125": {
+    "blue-lang-bidama-0.0.126": {
       "name": "blue-lang-bidama",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-bidama/blue-lang-bidama-0.0.125.crate",
-        "sha256": "cd904445b32b8c53f3a092257f5229520a5c7aaefddc24478c9145072d72a7a7",
-        "name_with_ext": "blue-lang-bidama-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-bidama/blue-lang-bidama-0.0.126.crate",
+        "sha256": "e2b8cb3f14e7739683491dcd056d545331242dcaeed7855bb0b873dc8831cb12",
+        "name_with_ext": "blue-lang-bidama-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -738,7 +738,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -751,19 +751,19 @@
       "crate_renames": {
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-bidama",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ]
@@ -772,15 +772,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_bidama;"
       }
     },
-    "blue-lang-check-0.0.125": {
+    "blue-lang-check-0.0.126": {
       "name": "blue-lang-check",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-check/blue-lang-check-0.0.125.crate",
-        "sha256": "ff48395cf80f6edf210f391487bab32f1005d7fb0dba2b4f5e71d7eb2c33c57c",
-        "name_with_ext": "blue-lang-check-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-check/blue-lang-check-0.0.126.crate",
+        "sha256": "6aeb3520c6c7736502df45b90201fe93eb6d5f9e4c3fb8b7e87c68327daf2ace",
+        "name_with_ext": "blue-lang-check-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -791,7 +791,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -814,7 +814,7 @@
       "crate_renames": {
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
@@ -827,12 +827,12 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-check",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
@@ -847,15 +847,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_check;"
       }
     },
-    "blue-lang-fmt-0.0.125": {
+    "blue-lang-fmt-0.0.126": {
       "name": "blue-lang-fmt",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-fmt/blue-lang-fmt-0.0.125.crate",
-        "sha256": "c9c2c7d8f935df7bfcaf556f94e876498124e04cc27fbc6d665cde5189745036",
-        "name_with_ext": "blue-lang-fmt-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-fmt/blue-lang-fmt-0.0.126.crate",
+        "sha256": "4880e2d494a59e8f652c40f8855a63ab668580ccdaa127e4db382b388663b43e",
+        "name_with_ext": "blue-lang-fmt-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -866,7 +866,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -899,7 +899,7 @@
       "crate_renames": {
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
@@ -912,12 +912,12 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-fmt",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
@@ -932,15 +932,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_fmt;"
       }
     },
-    "blue-lang-host-0.0.125": {
+    "blue-lang-host-0.0.126": {
       "name": "blue-lang-host",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-host/blue-lang-host-0.0.125.crate",
-        "sha256": "9dc8e7043d54e1a2e82525d061f4bfaee4ea7aed5a63e1203414ff3cb080a8ec",
-        "name_with_ext": "blue-lang-host-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-host/blue-lang-host-0.0.126.crate",
+        "sha256": "80251bc1e48a91d75289b9c340e9e94fd371ab3d2ac554fe0fd895ab9ca2c5f2",
+        "name_with_ext": "blue-lang-host-0.0.126.tar.gz"
       },
       "features": [
         "default",
@@ -954,7 +954,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_host_macros",
-          "package_key": "blue-lang-host-macros-0.0.125",
+          "package_key": "blue-lang-host-macros-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -964,7 +964,7 @@
         },
         {
           "name": "blue_lang_pkg",
-          "package_key": "blue-lang-pkg-0.0.125",
+          "package_key": "blue-lang-pkg-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -974,7 +974,7 @@
         },
         {
           "name": "blue_lang_runtime",
-          "package_key": "blue-lang-runtime-0.0.125",
+          "package_key": "blue-lang-runtime-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -984,7 +984,7 @@
         },
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1027,25 +1027,25 @@
       "crate_renames": {
         "blue-lang-host-macros": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_host_macros"
           }
         ],
         "blue-lang-pkg": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_pkg"
           }
         ],
         "blue-lang-runtime": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_runtime"
           }
         ],
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ],
@@ -1064,7 +1064,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-host",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "features": [
           "default",
@@ -1073,25 +1073,25 @@
         "crateRenames": {
           "blue-lang-host-macros": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_host_macros"
             }
           ],
           "blue-lang-pkg": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_pkg"
             }
           ],
           "blue-lang-runtime": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_runtime"
             }
           ],
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ],
@@ -1112,15 +1112,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_host;"
       }
     },
-    "blue-lang-host-macros-0.0.125": {
+    "blue-lang-host-macros-0.0.126": {
       "name": "blue-lang-host-macros",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-host-macros/blue-lang-host-macros-0.0.125.crate",
-        "sha256": "c3ec03462731a7229f232d051edd58bacde63a132f0ad0da706b4220717d47eb",
-        "name_with_ext": "blue-lang-host-macros-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-host-macros/blue-lang-host-macros-0.0.126.crate",
+        "sha256": "e002a4946f46f8669965b6bb954d244eb05cd12bf7c7adfac705d65999719c0c",
+        "name_with_ext": "blue-lang-host-macros-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": true,
@@ -1173,7 +1173,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-host-macros",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "proc-macro2": [
@@ -1188,15 +1188,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_host_macros;"
       }
     },
-    "blue-lang-mondou-0.0.125": {
+    "blue-lang-mondou-0.0.126": {
       "name": "blue-lang-mondou",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-mondou/blue-lang-mondou-0.0.125.crate",
-        "sha256": "919ceab5318d33673d36cdd19a6c9489ab09122e7bb06d32ce1c88b18b83f269",
-        "name_with_ext": "blue-lang-mondou-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-mondou/blue-lang-mondou-0.0.126.crate",
+        "sha256": "3230f6076df1b6a652415e05530e0cc7616a65084852ef4da1005fa73463f2d2",
+        "name_with_ext": "blue-lang-mondou-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -1220,7 +1220,7 @@
         },
         {
           "name": "blue_lang_check",
-          "package_key": "blue-lang-check-0.0.125",
+          "package_key": "blue-lang-check-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1230,7 +1230,7 @@
         },
         {
           "name": "blue_lang_fmt",
-          "package_key": "blue-lang-fmt-0.0.125",
+          "package_key": "blue-lang-fmt-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1240,7 +1240,7 @@
         },
         {
           "name": "blue_lang_runtime",
-          "package_key": "blue-lang-runtime-0.0.125",
+          "package_key": "blue-lang-runtime-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1250,7 +1250,7 @@
         },
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1260,7 +1260,7 @@
         },
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1293,31 +1293,31 @@
       "crate_renames": {
         "blue-lang-check": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_check"
           }
         ],
         "blue-lang-fmt": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_fmt"
           }
         ],
         "blue-lang-runtime": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_runtime"
           }
         ],
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ],
@@ -1330,36 +1330,36 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-mondou",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-check": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_check"
             }
           ],
           "blue-lang-fmt": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_fmt"
             }
           ],
           "blue-lang-runtime": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_runtime"
             }
           ],
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ],
@@ -1374,15 +1374,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_mondou;"
       }
     },
-    "blue-lang-pkg-0.0.125": {
+    "blue-lang-pkg-0.0.126": {
       "name": "blue-lang-pkg",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-pkg/blue-lang-pkg-0.0.125.crate",
-        "sha256": "762abee49706d9d897d1cc2135432310b5c3c3ceb5befa447c28e374c9b28464",
-        "name_with_ext": "blue-lang-pkg-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-pkg/blue-lang-pkg-0.0.126.crate",
+        "sha256": "508b52521eaad1baec356d5830e79823b4002bdd3f09223d394dd8c1777f2d51",
+        "name_with_ext": "blue-lang-pkg-0.0.126.tar.gz"
       },
       "features": [
         "embedded"
@@ -1395,7 +1395,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_bidama",
-          "package_key": "blue-lang-bidama-0.0.125",
+          "package_key": "blue-lang-bidama-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1405,7 +1405,7 @@
         },
         {
           "name": "blue_lang_check",
-          "package_key": "blue-lang-check-0.0.125",
+          "package_key": "blue-lang-check-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1415,7 +1415,7 @@
         },
         {
           "name": "blue_lang_fmt",
-          "package_key": "blue-lang-fmt-0.0.125",
+          "package_key": "blue-lang-fmt-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1425,7 +1425,7 @@
         },
         {
           "name": "blue_lang_mondou",
-          "package_key": "blue-lang-mondou-0.0.125",
+          "package_key": "blue-lang-mondou-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1435,7 +1435,7 @@
         },
         {
           "name": "blue_lang_runtime",
-          "package_key": "blue-lang-runtime-0.0.125",
+          "package_key": "blue-lang-runtime-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1445,7 +1445,7 @@
         },
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1455,7 +1455,7 @@
         },
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1520,43 +1520,43 @@
       "crate_renames": {
         "blue-lang-bidama": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_bidama"
           }
         ],
         "blue-lang-check": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_check"
           }
         ],
         "blue-lang-fmt": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_fmt"
           }
         ],
         "blue-lang-mondou": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_mondou"
           }
         ],
         "blue-lang-runtime": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_runtime"
           }
         ],
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ],
@@ -1575,7 +1575,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-pkg",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "features": [
           "embedded"
@@ -1583,43 +1583,43 @@
         "crateRenames": {
           "blue-lang-bidama": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_bidama"
             }
           ],
           "blue-lang-check": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_check"
             }
           ],
           "blue-lang-fmt": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_fmt"
             }
           ],
           "blue-lang-mondou": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_mondou"
             }
           ],
           "blue-lang-runtime": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_runtime"
             }
           ],
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ],
@@ -1641,15 +1641,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_pkg;"
       }
     },
-    "blue-lang-proc-0.0.125": {
+    "blue-lang-proc-0.0.126": {
       "name": "blue-lang-proc",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-proc/blue-lang-proc-0.0.125.crate",
-        "sha256": "a8c2fb558c65de0c9cca0d600ee752895ef357bf3b2102ade6a8ed4fbad40496",
-        "name_with_ext": "blue-lang-proc-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-proc/blue-lang-proc-0.0.126.crate",
+        "sha256": "c7b8151878595c225ef04d93e2dc95ca45e24d259f2dbf91edb3754f6c9e5bfb",
+        "name_with_ext": "blue-lang-proc-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -1660,7 +1660,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1703,7 +1703,7 @@
       "crate_renames": {
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ],
@@ -1722,12 +1722,12 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-proc",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ],
@@ -1748,15 +1748,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_proc;"
       }
     },
-    "blue-lang-runtime-0.0.125": {
+    "blue-lang-runtime-0.0.126": {
       "name": "blue-lang-runtime",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-runtime/blue-lang-runtime-0.0.125.crate",
-        "sha256": "a748b52ef7c871dabb692ac678c907238a2cec13eea472b1aefbbaff91ec9b98",
-        "name_with_ext": "blue-lang-runtime-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-runtime/blue-lang-runtime-0.0.126.crate",
+        "sha256": "1ecf6c6d0f98e7e34d7ca5ba9fdc5232f0d7e3ba6c0c234479a932da22634ca9",
+        "name_with_ext": "blue-lang-runtime-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -1780,7 +1780,7 @@
         },
         {
           "name": "blue_lang_check",
-          "package_key": "blue-lang-check-0.0.125",
+          "package_key": "blue-lang-check-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1790,7 +1790,7 @@
         },
         {
           "name": "blue_lang_fmt",
-          "package_key": "blue-lang-fmt-0.0.125",
+          "package_key": "blue-lang-fmt-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1800,7 +1800,7 @@
         },
         {
           "name": "blue_lang_proc",
-          "package_key": "blue-lang-proc-0.0.125",
+          "package_key": "blue-lang-proc-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1810,7 +1810,7 @@
         },
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1820,7 +1820,7 @@
         },
         {
           "name": "blue_lang_waku",
-          "package_key": "blue-lang-waku-0.0.125",
+          "package_key": "blue-lang-waku-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -1951,31 +1951,31 @@
       "crate_renames": {
         "blue-lang-check": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_check"
           }
         ],
         "blue-lang-fmt": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_fmt"
           }
         ],
         "blue-lang-proc": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_proc"
           }
         ],
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
         "blue-lang-waku": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_waku"
           }
         ],
@@ -2006,36 +2006,36 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-runtime",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-check": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_check"
             }
           ],
           "blue-lang-fmt": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_fmt"
             }
           ],
           "blue-lang-proc": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_proc"
             }
           ],
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
           "blue-lang-waku": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_waku"
             }
           ],
@@ -2068,15 +2068,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_runtime;"
       }
     },
-    "blue-lang-syntax-0.0.125": {
+    "blue-lang-syntax-0.0.126": {
       "name": "blue-lang-syntax",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-syntax/blue-lang-syntax-0.0.125.crate",
-        "sha256": "2389c60931bf34d91ff076b6cc136fb47913c6e2404533886f156d573c0a43aa",
-        "name_with_ext": "blue-lang-syntax-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-syntax/blue-lang-syntax-0.0.126.crate",
+        "sha256": "94bb4e35d2c882ef6ab0174ef09fcd35476145c4fb537b04a4e9576ecb9b7aa5",
+        "name_with_ext": "blue-lang-syntax-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -2107,7 +2107,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-syntax",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "tatara-lisp": [
@@ -2121,15 +2121,15 @@
         "preBuild": "export CARGO_CRATE_NAME=blue_lang_syntax;"
       }
     },
-    "blue-lang-waku-0.0.125": {
+    "blue-lang-waku-0.0.126": {
       "name": "blue-lang-waku",
-      "version": "0.0.125",
+      "version": "0.0.126",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/blue-lang-waku/blue-lang-waku-0.0.125.crate",
-        "sha256": "0e194d9ddedbd1e7bf797de04a2167ee0478b86120ebd9985b7f819b5f241003",
-        "name_with_ext": "blue-lang-waku-0.0.125.tar.gz"
+        "url": "https://static.crates.io/crates/blue-lang-waku/blue-lang-waku-0.0.126.crate",
+        "sha256": "d7d6d329bc4901af5cae999865e78201eeabd7d81cb694e6e5bc464f211cc722",
+        "name_with_ext": "blue-lang-waku-0.0.126.tar.gz"
       },
       "features": [],
       "proc_macro": false,
@@ -2140,7 +2140,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_syntax",
-          "package_key": "blue-lang-syntax-0.0.125",
+          "package_key": "blue-lang-syntax-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -2163,7 +2163,7 @@
       "crate_renames": {
         "blue-lang-syntax": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_syntax"
           }
         ],
@@ -2176,12 +2176,12 @@
       },
       "build_rust_crate_args": {
         "crateName": "blue-lang-waku",
-        "version": "0.0.125",
+        "version": "0.0.126",
         "edition": "2021",
         "crateRenames": {
           "blue-lang-syntax": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_syntax"
             }
           ],
@@ -10753,7 +10753,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_host",
-          "package_key": "blue-lang-host-0.0.125",
+          "package_key": "blue-lang-host-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -10776,7 +10776,7 @@
       "crate_renames": {
         "blue-lang-host": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_host"
           }
         ],
@@ -10794,7 +10794,7 @@
         "crateRenames": {
           "blue-lang-host": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_host"
             }
           ],
@@ -10831,7 +10831,7 @@
       "runtime_dependencies": [
         {
           "name": "blue_lang_host",
-          "package_key": "blue-lang-host-0.0.125",
+          "package_key": "blue-lang-host-0.0.126",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -10874,7 +10874,7 @@
       "crate_renames": {
         "blue-lang-host": [
           {
-            "version": "0.0.125",
+            "version": "0.0.126",
             "rename": "blue_lang_host"
           }
         ],
@@ -10904,7 +10904,7 @@
         "crateRenames": {
           "blue-lang-host": [
             {
-              "version": "0.0.125",
+              "version": "0.0.126",
               "rename": "blue_lang_host"
             }
           ],
@@ -11489,11 +11489,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-bidama-0.0.125": {
+      "blue-lang-bidama-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11505,11 +11505,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-check-0.0.125": {
+      "blue-lang-check-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11531,11 +11531,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-fmt-0.0.125": {
+      "blue-lang-fmt-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11567,11 +11567,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-host-0.0.125": {
+      "blue-lang-host-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_host_macros",
-            "package_key": "blue-lang-host-macros-0.0.125",
+            "package_key": "blue-lang-host-macros-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11581,7 +11581,7 @@
           },
           {
             "name": "blue_lang_pkg",
-            "package_key": "blue-lang-pkg-0.0.125",
+            "package_key": "blue-lang-pkg-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11591,7 +11591,7 @@
           },
           {
             "name": "blue_lang_runtime",
-            "package_key": "blue-lang-runtime-0.0.125",
+            "package_key": "blue-lang-runtime-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11601,7 +11601,7 @@
           },
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11646,7 +11646,7 @@
           "packages"
         ]
       },
-      "blue-lang-host-macros-0.0.125": {
+      "blue-lang-host-macros-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -11684,7 +11684,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-mondou-0.0.125": {
+      "blue-lang-mondou-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blake3",
@@ -11701,7 +11701,7 @@
           },
           {
             "name": "blue_lang_check",
-            "package_key": "blue-lang-check-0.0.125",
+            "package_key": "blue-lang-check-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11711,7 +11711,7 @@
           },
           {
             "name": "blue_lang_fmt",
-            "package_key": "blue-lang-fmt-0.0.125",
+            "package_key": "blue-lang-fmt-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11721,7 +11721,7 @@
           },
           {
             "name": "blue_lang_runtime",
-            "package_key": "blue-lang-runtime-0.0.125",
+            "package_key": "blue-lang-runtime-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11731,7 +11731,7 @@
           },
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11741,7 +11741,7 @@
           },
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11773,11 +11773,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-pkg-0.0.125": {
+      "blue-lang-pkg-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_bidama",
-            "package_key": "blue-lang-bidama-0.0.125",
+            "package_key": "blue-lang-bidama-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11787,7 +11787,7 @@
           },
           {
             "name": "blue_lang_check",
-            "package_key": "blue-lang-check-0.0.125",
+            "package_key": "blue-lang-check-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11797,7 +11797,7 @@
           },
           {
             "name": "blue_lang_fmt",
-            "package_key": "blue-lang-fmt-0.0.125",
+            "package_key": "blue-lang-fmt-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11807,7 +11807,7 @@
           },
           {
             "name": "blue_lang_mondou",
-            "package_key": "blue-lang-mondou-0.0.125",
+            "package_key": "blue-lang-mondou-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11817,7 +11817,7 @@
           },
           {
             "name": "blue_lang_runtime",
-            "package_key": "blue-lang-runtime-0.0.125",
+            "package_key": "blue-lang-runtime-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11827,7 +11827,7 @@
           },
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11837,7 +11837,7 @@
           },
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11903,11 +11903,11 @@
           "embedded"
         ]
       },
-      "blue-lang-proc-0.0.125": {
+      "blue-lang-proc-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11949,7 +11949,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-runtime-0.0.125": {
+      "blue-lang-runtime-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blake3",
@@ -11966,7 +11966,7 @@
           },
           {
             "name": "blue_lang_check",
-            "package_key": "blue-lang-check-0.0.125",
+            "package_key": "blue-lang-check-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11976,7 +11976,7 @@
           },
           {
             "name": "blue_lang_fmt",
-            "package_key": "blue-lang-fmt-0.0.125",
+            "package_key": "blue-lang-fmt-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11986,7 +11986,7 @@
           },
           {
             "name": "blue_lang_proc",
-            "package_key": "blue-lang-proc-0.0.125",
+            "package_key": "blue-lang-proc-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -11996,7 +11996,7 @@
           },
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -12006,7 +12006,7 @@
           },
           {
             "name": "blue_lang_waku",
-            "package_key": "blue-lang-waku-0.0.125",
+            "package_key": "blue-lang-waku-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -12136,7 +12136,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-syntax-0.0.125": {
+      "blue-lang-syntax-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "tatara_lisp",
@@ -12152,11 +12152,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "blue-lang-waku-0.0.125": {
+      "blue-lang-waku-0.0.126": {
         "runtime_dependencies": [
           {
             "name": "blue_lang_syntax",
-            "package_key": "blue-lang-syntax-0.0.125",
+            "package_key": "blue-lang-syntax-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -15807,7 +15807,7 @@
         "runtime_dependencies": [
           {
             "name": "blue_lang_host",
-            "package_key": "blue-lang-host-0.0.125",
+            "package_key": "blue-lang-host-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -15833,7 +15833,7 @@
         "runtime_dependencies": [
           {
             "name": "blue_lang_host",
-            "package_key": "blue-lang-host-0.0.125",
+            "package_key": "blue-lang-host-0.0.126",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -17659,12 +17659,12 @@
       }
     }
   },
-  "cargo_lock_sha256": "8dc9de9a1eddc7f9d53ccb69781971a7ec05543c70c186d371d1469274383c97",
+  "cargo_lock_sha256": "7e2e1d0ac11e864c4ae3ec7944295c6048142849ef1136c0f182398263fe24ed",
   "manifest_sha256": {
     "Cargo.toml": "15d8f61cfc36d69ffa6b7f22ee0ee44f117826a07eea2d42793a25f3a323b599",
     "crates/zukai-cli/Cargo.toml": "559ac2626908a6b81d852a90c4c103ba396720126bcdfe7a9513df49c45c7e0d",
-    "crates/zukai-confluence/Cargo.toml": "f6290259481e546569f754e13040ded8b1e293a21f93df61398e0c1a351ff573",
-    "crates/zukai-kata/Cargo.toml": "b58b03dd2fde6b054cb3aa089d6b900d25fe17f93fb9303978259f4950f1e8ca",
+    "crates/zukai-confluence/Cargo.toml": "ee58578d952064e05bd1d7713ece54c562cdd737e46119e76d17ef9e9eb8708a",
+    "crates/zukai-kata/Cargo.toml": "0d350dce8999416b0a5bc70982b28f2ec343f42cddfb97b282f6344d06025a4d",
     "crates/zukai-lower/Cargo.toml": "0d5572dd087ca10c3d06ee006ccff1688db0de20516f97e14c75ccff252237bb",
     "crates/zukai-model/Cargo.toml": "4fa378d938c52aa3fe2ee26d0b2c8e8835f615194a3bef5f882af0a1686241b0",
     "crates/zukai-render/Cargo.toml": "8fb6ee2b5ce1c9152643a69e4c2132b8eb26d25843323e937fa695f4a0cda9b6"

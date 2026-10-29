@@ -9,7 +9,7 @@ description = "zukai-kata (型) — named diagram patterns. The re-use space whe
 [dependencies]
 zukai-model = { path = "../zukai-model", version = "0.0.1" }
 tatara-lisp = "0.3.61"
-blue-lang-host = "0.0.125"
+blue-lang-host = "0.0.126"
 tatara-lisp-eval = "0.4"
 
 [dev-dependencies]

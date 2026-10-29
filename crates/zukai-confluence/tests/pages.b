@@ -29,7 +29,7 @@ def toc_two_to_three()
 end
 
 def two_tabs()
-  cf_tabs([["Overview", "<p>over</p>"], ["Details", "<p>det</p>"]])
+  cf_tabs([%w[Overview <p>over</p>], %w[Details <p>det</p>]])
 end
 
 def done_and_todo()
@@ -61,7 +61,7 @@ def bare_page_link()
 end
 
 def service_table()
-  cf_table(["Service", "IP"], [["vault", "1.2.3.4"], ["auth", "5.6.7.8"]])
+  cf_table(%w[Service IP], [%w[vault 1.2.3.4], %w[auth 5.6.7.8]])
 end
 
 def ordered_body()
