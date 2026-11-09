@@ -5,7 +5,7 @@ the structural primitives of `zukai-model` compose into idioms. Pick from
 this glossary by intent; the `diagram-authoring` skill maps user intent
 ("draw the multi-region architecture for X") to the right pattern here.
 
-Vocabulary follows `pleme-io/theory/CLAUDE.md`'s rule: terms are defined
+Terms are defined
 before use. Each pattern earns its place by being reusable across many
 diagrams (the duplication budget is zero).
 
@@ -357,4 +357,3 @@ Roadmap mined from the multi-region acceptance corpus + cross-cluster (FinOps/Pe
 - Render seam (every `Diagram` flows through this): `crates/zukai-render/src/lib.rs`.
 - Authoring + Confluence loop skill that reaches for these patterns: `blackmatter-pleme/skills/diagram-authoring/SKILL.md`.
 - Design note + reuse ledger: `docs/DESIGN.md`.
-- `theory/THEORY.md` §II.3 (naming), §III.1 (artifact ≠ source), §VI (generation over composition).

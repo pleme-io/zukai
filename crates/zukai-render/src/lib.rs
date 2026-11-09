@@ -1,5 +1,5 @@
 //! zukai-render — render morphisms. A [`Renderer`] is the diagram-domain
-//! Synthesizer (`theory/THEORY.md` §III.2): a pure total
+//! Synthesizer: a pure total
 //! `(Diagram, &dyn Theme) -> Vec<u8>`. Bytes are the unified leaf abstraction
 //! — UTF-8 text for [`Svg`]/Mermaid, binary for [`Png`].
 //!

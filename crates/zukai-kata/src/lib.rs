@@ -6,7 +6,7 @@
 //! through the same `Theme` seam as any other. This is the layer the
 //! `diagram-authoring` skill reaches for given a user's authoring intent.
 //!
-//! Naming follows `theory/THEORY.md` §II.3 — discipline layer is Japanese:
+//! Naming: the discipline layer is Japanese:
 //! **kata (型, "established form")**. The pattern glossary + when-to-use lives
 //! in `zukai/docs/VOCABULARY.md`.
 

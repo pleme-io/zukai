@@ -57,7 +57,7 @@ pub enum Role {
 
 /// Canvas extent in user units. Carries `#[derive(TataraDomain)]` —
 /// authorable as `(defcanvas :width 960 :height 560)` and re-enters the
-/// canonical SExpr IR via `compile_from_sexp` (`theory/THEORY.md` §II.1).
+/// canonical SExpr IR via `compile_from_sexp`.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, tatara_lisp::DeriveTataraDomain)]
 #[tatara(keyword = "defcanvas")]
 pub struct Canvas {

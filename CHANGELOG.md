@@ -123,7 +123,6 @@ Three live Confluence pages in the personal-space scratch area (URLs in `docs/MI
 - `CLAUDE.md` — refreshed doctrine for v0.1 (kata-first authoring rule).
 - `README.md` — quick-start + status.
 - `pleme-io/blackmatter-pleme/skills/diagram-authoring/SKILL.md` — updated trigger table for all 17 patterns + the publish workflow with `confluence::embed`.
-- `pleme-io/theory/VOCABULARY.md` — zukai row refreshed.
 
 ## [v0.0] — pre-history
 

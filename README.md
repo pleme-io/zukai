@@ -115,4 +115,3 @@ examples/             in crates/zukai-kata/examples/
 - [`CHANGELOG.md`](./CHANGELOG.md) — release notes.
 - `pleme-io/blackmatter-pleme/skills/diagram-authoring/SKILL.md` — the skill that maps user intent to kata patterns + drives the publish pipeline.
 - `pleme-io/ishou/` — the token system zukai themes off of.
-- `pleme-io/theory/` — `THEORY.md` §III.1 (artifact ≠ source), §III.2 (AST domains + morphisms), §VI (generation over composition).

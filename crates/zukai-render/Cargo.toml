@@ -15,7 +15,7 @@ resvg = "0.45"
 # its TokenSet to zukai's `Theme` trait. Path-dep into the sibling pleme-io
 # repo; cargo resolves its workspace.deps (irodori from crates.io) cleanly.
 ishou-tokens = "0.1.18"
-# Three-pillar attestation primitive (theory/THEORY.md §V.3) — this is the
+# Three-pillar attestation primitive — this is the
 # same `blake3` crate `tameshi` uses internally; tameshi adds the Ed25519
 # signing + persistent HeartbeatChain on top (wired at workspace absorption).
 blake3 = "1.8"

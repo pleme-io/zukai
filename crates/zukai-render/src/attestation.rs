@@ -1,4 +1,4 @@
-//! Three-pillar BLAKE3 attestation (`theory/THEORY.md` §V.3, Pillar 10):
+//! Three-pillar BLAKE3 attestation (Pillar 10):
 //!
 //!   `artifact_hash ⊕ control_hash ⊕ intent_hash  →  BLAKE3 root`
 //!

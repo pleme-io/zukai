@@ -1,8 +1,8 @@
 # zukai — Design Note
 
-> **★★★ CSE / Knowable Construction.** This repo operates under **Constructive Substrate Engineering** — canonical spec at `pleme-io/theory/CONSTRUCTIVE-SUBSTRATE-ENGINEERING.md`. The Compounding Directive (solve once, load-bearing fixes only, idiom-first, models stay current, direction beats velocity) is in `pleme-io/CLAUDE.md` ★★★. Read both before non-trivial changes.
+> **★★★ CSE / Knowable Construction.** This repo operates under **Constructive Substrate Engineering**. The Compounding Directive (solve once, load-bearing fixes only, idiom-first, models stay current, direction beats velocity) is in `pleme-io/CLAUDE.md` ★★★. Read it before non-trivial changes.
 
-**zukai (図解, "diagram")** is a new citizen of the typescape. It owns one concern: **the typed declaration of a diagram, and its projection into any viewing surface.** Every visual artifact zukai produces — SVG, PNG, Mermaid, Graphviz, draw.io, Excalidraw, a Confluence `ac:image` — is a *projection of a typed `DiagramSpec` through a morphism*. The spec is the source we mine; the artifact is how it looks from one angle. Every solution flows from the model; rewriting an artifact without going through the spec is drift (`theory/THEORY.md` §III.1).
+**zukai (図解, "diagram")** is a new citizen of the typescape. It owns one concern: **the typed declaration of a diagram, and its projection into any viewing surface.** Every visual artifact zukai produces — SVG, PNG, Mermaid, Graphviz, draw.io, Excalidraw, a Confluence `ac:image` — is a *projection of a typed `DiagramSpec` through a morphism*. The spec is the source we mine; the artifact is how it looks from one angle. Every solution flows from the model; rewriting an artifact without going through the spec is drift.
 
 This note is the design artifact the six-line-contract rule asks for (`THEORY.md` §II.1) — it records the seven-question gate and the reuse ledger before any code.
 
@@ -90,7 +90,6 @@ Model + lower/layout + **SVG + PNG** render + **Confluence** delivery, themed ge
 1. Register the new AST domain in the typescape (`arch-synthesizer`). 2. `zukai-render/src/<target>.rs`: `pub fn render(&LoweredDiagram, &ThemeCase) -> String`. 3. `Target` enum variant + match arms. 4. `mkRenderApp` Nix app. 5. determinism test. 6. VOCABULARY row.
 
 ## 10. Solidification (the context lock-in)
-- `theory/VOCABULARY.md` rows: `zukai`, the new diagram AST domains, `ThemeCase`.
 - `zukai/CLAUDE.md` (+ CSE header) + this `docs/DESIGN.md`.
 - `blackmatter-pleme/skills/diagram-authoring/SKILL.md` — trigger: *"author/iterate a diagram or visualization for Confluence or docs."* "Tools used": `zukai render …`. Anti-patterns: never hand-author SVG; never hardcode hexes; private overlay content stays private; `format!` only for leaf output. Registered in `skill-map.d`, `skill-lint`-clean, deployed via home-manager rebuild.
 - memory lock.

@@ -1,6 +1,6 @@
 # zukai — AI agent instructions
 
-> **★★★ CSE / Knowable Construction.** This repo operates under **Constructive Substrate Engineering** — canonical spec at `pleme-io/theory/CONSTRUCTIVE-SUBSTRATE-ENGINEERING.md`. The Compounding Directive (solve once, load-bearing fixes only, idiom-first, models stay current, direction beats velocity) is in `pleme-io/CLAUDE.md` ★★★. Read both before non-trivial changes.
+> **★★★ CSE / Knowable Construction.** This repo operates under **Constructive Substrate Engineering**. The Compounding Directive (solve once, load-bearing fixes only, idiom-first, models stay current, direction beats velocity) is in `pleme-io/CLAUDE.md` ★★★. Read it before non-trivial changes.
 
 **zukai (図解, "diagram")** — typed diagram domain. **v0.1 shipped 2026-05-28:** 17 named kata patterns + `multi_region` v1 (N regions, star replication) + `from_mermaid` (Case B helper) + Confluence delivery helper + three live proof pages. **120 tests green** across 5 crates.
 
@@ -18,7 +18,7 @@
 - **`format!()` for leaf output only.** SVG / Mermaid / DOT strings are leaf artifacts; `format!()` is idiomatic for them. Any *intermediate* code (e.g. emitting Go/Nix) must go through a typed AST (`iac-forge::goast` rule).
 - **Determinism is the gate.** `cargo test` must show byte-equal output across two renders of the same `(spec, theme)`. Drift = red build.
 - **PNG via `ac:image ac:width` is the chosen Confluence target.** Not SVG (`ac:width` honored inconsistently), not Mermaid (editable in Confluence — defeats "spec is the source"). Embed via `zukai_render::confluence::embed`.
-- **Add-a-target = the §III.2 recipe.** Register the new AST domain in `arch-synthesizer` → new `Renderer` impl in `zukai-render` → new `Target` variant → `mkRenderApp` Nix app → determinism test → `theory/VOCABULARY.md` row.
+- **Add-a-target = the §III.2 recipe.** Register the new AST domain in `arch-synthesizer` → new `Renderer` impl in `zukai-render` → new `Target` variant → `mkRenderApp` Nix app → determinism test.
 - **Add-a-pattern = the kata recipe.** New `zukai-kata/src/<name>.rs` (args struct + fn + tests for structural invariants + determinism) → re-export from `lib.rs` → row in `docs/VOCABULARY.md` → trigger phrases in the `diagram-authoring` skill.
 - **Public / private boundary.** zukai is public + generic (consumes `ishou` `TokenSet`). Brand-specific theming arrives only via a private `bordado` overlay (lives in a separate private brand source repo); it never lives here. Tenant-specific *content* (diagram specs naming real services/IPs) also stays in private consumers.
 

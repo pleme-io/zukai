@@ -2,7 +2,7 @@
 //!
 //! NEXT COMPOUND: once the six-line contract is wired (TataraDomain on
 //! `DiagramSpec`), this gains `render --spec FILE.{yaml,scm,nix}` that loads
-//! any of the Four Lisps via the canonical SExpr IR (`theory/THEORY.md` §II.2).
+//! any of the Four Lisps via the canonical SExpr IR.
 
 use clap::{Parser, Subcommand, ValueEnum};
 use std::{fs, path::PathBuf, process::ExitCode};

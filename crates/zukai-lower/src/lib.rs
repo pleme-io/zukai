@@ -1,6 +1,6 @@
 //! zukai-lower — `DiagramSpec → iac_forge::sexpr::SExpr`.
 //!
-//! Realizes "four Lisps → one IR" (`theory/THEORY.md` §VIII.1, §III.1) for
+//! Realizes "four Lisps → one IR" for
 //! the diagram domain: the typed `DiagramSpec` collapses to the canonical
 //! SExpr that every other typescape citizen shares. From here, the
 //! `iac-forge` morphism / pipeline / transform machinery applies — that's
@@ -39,7 +39,7 @@ pub fn lower_hero(h: &Hero) -> SExpr {
 }
 
 /// Lower the entire `Diagram` to a single canonical SExpr — the same IR
-/// every typescape citizen reduces to (`theory/THEORY.md` §VIII.1).
+/// every typescape citizen reduces to.
 #[must_use]
 pub fn lower(d: &Diagram) -> SExpr {
     sexpr::struct_expr(
