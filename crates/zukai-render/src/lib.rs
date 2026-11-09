@@ -492,7 +492,7 @@ mod tests {
         assert_eq!(Svg.render(&d, &t), Svg.render(&d, &t));
     }
 
-    // ── Three-pillar attestation (THEORY.md §V.3 + Pillar 10) ──────────
+    // ── Three-pillar attestation (Pillar 10) ──────────
 
     #[test]
     fn render_attestation_is_byte_stable_across_renders() {
