@@ -10,7 +10,7 @@
 //! the same `blake3` crate `tameshi` uses internally. The upgrade path at
 //! workspace absorption is `tameshi::certification_artifact::Certification
 //! Artifact` + Ed25519 signing + the persistent `HeartbeatChain` for the
-//! Phase 1 → Phase 2 attestation lifecycle (`THEORY.md` §V.4). The hashes
+//! Phase 1 → Phase 2 attestation lifecycle. The hashes
 //! produced here remain valid leaves in that chain.
 
 /// A three-pillar attestation: three BLAKE3 leaves + a BLAKE3 Merkle root.

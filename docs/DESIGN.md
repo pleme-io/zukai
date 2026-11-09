@@ -4,7 +4,7 @@
 
 **zukai (図解, "diagram")** is a new citizen of the typescape. It owns one concern: **the typed declaration of a diagram, and its projection into any viewing surface.** Every visual artifact zukai produces — SVG, PNG, Mermaid, Graphviz, draw.io, Excalidraw, a Confluence `ac:image` — is a *projection of a typed `DiagramSpec` through a morphism*. The spec is the source we mine; the artifact is how it looks from one angle. Every solution flows from the model; rewriting an artifact without going through the spec is drift.
 
-This note is the design artifact the six-line-contract rule asks for (`THEORY.md` §II.1) — it records the seven-question gate and the reuse ledger before any code.
+This note is the design artifact the six-line-contract rule asks for — it records the seven-question gate and the reuse ledger before any code.
 
 ## 1. Why this shape is forced, not chosen
 
@@ -13,15 +13,15 @@ zukai introduces **no new theory**. Every structural decision is dictated by an 
 | Decision | Directive |
 |---|---|
 | Rust, not TypeScript | Pillar 1 — Rust; server-side TS forbidden (TS edge-only, `lilitu/`) |
-| `DiagramSpec` via `#[derive(TataraDomain)]` `(defdiagram …)` | §II.1 six-line contract |
-| Diagrams are never hand-authored | §III.1 — the artifact is never the source; hand-editing is drift |
-| SVG/Mermaid/Graphviz/draw.io/Excalidraw = AST domains; renderers = `Synthesizer` backends | §III.2 — a new backend inherits all proofs |
-| "Arbitrary build steps before delivery" = morphism pipeline over the SExpr IR | §VIII.1 — four Lisps → one IR (`iac_forge::sexpr::SExpr`) |
+| `DiagramSpec` via `#[derive(TataraDomain)]` `(defdiagram …)` | Six-line contract |
+| Diagrams are never hand-authored | The artifact is never the source; hand-editing is drift |
+| SVG/Mermaid/Graphviz/draw.io/Excalidraw = AST domains; renderers = `Synthesizer` backends | A new backend inherits all proofs |
+| "Arbitrary build steps before delivery" = morphism pipeline over the SExpr IR | Four Lisps → one IR (`iac_forge::sexpr::SExpr`) |
 | Theming reuses `ishou` (token→targets); no new theme tool | Pillar 6 + idiom-first |
 | Brand-specific overlay = a private `bordado` over the generic base | `VOCABULARY.md` `bordado` |
-| Japanese name | §II.3 — discipline layer → Japanese |
+| Japanese name | Discipline layer → Japanese |
 | Scaffolded by `repo-forge`, built by `substrate`, `nix run .#app` | Pillar 9 |
-| Each render attested (artifact⊕control⊕intent BLAKE3) + `.typescape.yaml` | §V.3, Pillar 10 |
+| Each render attested (artifact⊕control⊕intent BLAKE3) + `.typescape.yaml` | Pillar 10 |
 
 ## 2. The pipeline (the one structure)
 
@@ -33,13 +33,13 @@ zukai introduces **no new theory**. Every structural decision is dictated by an 
         ThemeCase = ishou TokenSet  ⊕  private `bordado` overlay  ────────────┘
 ```
 
-- **Authoring (the Four Lisps).** Because `DiagramSpec` derives `TataraDomain`, a diagram is authorable as a tatara-lisp form, a YAML doc, a Nix expression, or a Rust value — all reduce to the same `SExpr` (§II.2, §VIII.1). No bespoke parser.
+- **Authoring (the Four Lisps).** Because `DiagramSpec` derives `TataraDomain`, a diagram is authorable as a tatara-lisp form, a YAML doc, a Nix expression, or a Rust value — all reduce to the same `SExpr`. No bespoke parser.
 - **The model.** Pure typed primitives reverse-engineered from a hand-tuned multi-region acceptance corpus: `Diagram`, `Region`, `Node`, `Edge`, `Band`, `Badge`, `Legend`, `Role`, `Anchor`, `Stroke`, `Marker`, `Grid`. Colors are never literals — every visual attribute resolves through a `ThemeCase` role.
 - **The IR + build steps.** The spec lowers to `iac_forge::sexpr::SExpr`; the build steps are morphisms/transforms over that IR (`iac-forge` `morphism`/`pipeline`/`transform`) — layout, theme-application, optimization, target-wrapping. Stage-to-stage `sexpr` diff gives semantic change tracking.
 - **The render morphisms.** Each target is an AST domain; each renderer is a `Synthesizer`/`Backend`. A renderer is a pure total `(LoweredDiagram, ThemeCase) -> Vec<u8>`; SVG/Mermaid are *leaf* outputs, so `format!`/a small writer is idiomatic (the no-`format!()` rule binds *intermediate* code, not leaf artifacts — `ishou-render/src/svg.rs` precedent).
 - **Theming.** `ishou` already renders a `TokenSet` to many formats; zukai consumes the `TokenSet` for diagram styling. The generic base is public (borealis/ishou); brand-specific theming arrives only via a private `bordado` overlay (vendored from a private brand source repo), applied at render time. zukai itself never contains a brand hex.
 
-## 3. The seven questions (§IV.6 gate)
+## 3. The seven-question gate
 1. **Declaration** — `DiagramSpec` (TataraDomain) + `ThemeCase` (ishou TokenSet ± bordado).
 2. **Invariants** — render is pure, total, byte-deterministic; output validates against the target grammar; no hardcoded colors; identical `(spec, theme)` ⇒ identical bytes.
 3. **Compliance baseline** — the public/private separation is the binding lattice constraint: a private overlay's brand hexes or any tenant-naming content may never be rendered from, or committed to, a public crate. A render carries a visibility class; a public-target render refuses private content.
@@ -52,7 +52,7 @@ zukai introduces **no new theory**. Every structural decision is dictated by an 
 - **Public** (a generic OSS diagram engine; reveals no private association): the `zukai` crates, the model, the render morphisms, the IR/pipeline reuse, the borealis/ishou generic base, the build+release machinery, and the generic `diagram-authoring` skill.
 - **Private** (brand + content): a private `bordado` overlay (brand-specific theme tokens) and diagram *content* (specs that name specific tenants/services/IPs). Both live in private consumers; the engine sees them only at render time.
 
-## 5. The eight-phase loop = the authoring + Confluence-perfection loop (§IV.3)
+## 5. The eight-phase loop = the authoring + Confluence-perfection loop
 ```
 DECLARE    (defdiagram …) / YAML spec
 SIMULATE   zukai render --target png  (resvg) → qlmanage quicklook            ← fast inner loop
@@ -65,7 +65,7 @@ RECONVERGE diff vs intent → edit spec → repeat
 ```
 Confluence is one delivery target among several; "perfecting the viewing experience in Confluence" is the VERIFY phase via the browser MCP, not a special case in the engine.
 
-## 6. Attestation & provenance (§V.3, Pillar 10, §VI.1)
+## 6. Attestation & provenance (Pillar 10)
 Every render emits a three-pillar BLAKE3 attestation (artifact ⊕ control ⊕ intent) into tameshi's chain, plus a `.typescape.yaml` recording the contributing dimensions. Regeneration is byte-identical; a diff across regenerations is drift to reconcile. The determinism test is the build gate.
 
 ## 7. Crate layout (Pillar 9; `ishou` is the workspace template)

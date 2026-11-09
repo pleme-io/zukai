@@ -86,7 +86,7 @@ Plus the workhorse `multi_region` (extended to v1, see below).
 
 **Confluence delivery helper:** `zukai_render::confluence::embed(filename, width) -> String` — emits the Confluence storage-format `<ac:image ac:width="…"><ri:attachment …/></ac:image>` snippet; XML-attribute-escapes the filename.
 
-**`zukai-render::RenderAttestation`** — three-pillar BLAKE3 attestation (artifact⊕control⊕intent) for the §IV.3 VERIFY phase.
+**`zukai-render::RenderAttestation`** — three-pillar BLAKE3 attestation (artifact⊕control⊕intent) for the VERIFY phase.
 
 **`zukai-render::IshouTheme`** — adapts `ishou::TokenSet` to the `Theme` seam (Nord palette wired as the public generic default).
 
